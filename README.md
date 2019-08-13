@@ -27,6 +27,10 @@ This message shows that a new security configuration was generated, you can then
 
 Finally, open a browser and navigate to `http://127.0.0.1:8080/keygen` in order to generate your key. Now you can use the secret `key` generated to create channel keys, which allow you to secure individual channels and start using emitter.
 
+![image](https://user-images.githubusercontent.com/1423657/62931666-044bf200-bdbf-11e9-90b0-43705eb81186.png)
+
+###### MARK DOWN YOUR GENERATED KEY!
+
 #### HEPmitter
 Clone this git repository and install using `npm`
 ```
