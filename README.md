@@ -21,11 +21,11 @@ Both commands above start a new server and if no configuration or environment va
 ```
 [service] unable to find a license, make sure 'license' value is set in the config file or EMITTER_LICENSE environment variable
 [service] generated new license: uppD0PFIcNK6VY-7PTo7uWH8EobaOGgRAAAAAAAAAAI
-[service] generated new secret key: JUoOxjoXLc4muSxXynOpTc60nWtwUI3o
+[service] generated new secret key: 4nEeZxflLe4N36i1XDiNgRY2dvbduqYh
 ```
 This message shows that a new security configuration was generated, you can then re-run `EMITTER_LICENSE` set to the specified value. Alternatively, you can set `license` property in the `emitter.conf` configuration file.
 
-Finally, open a browser and navigate to `http://127.0.0.1:8080/keygen` in order to generate your key. Now you can use the secret `key` generated to create channel keys, which allow you to secure individual channels and start using emitter.
+Next, open a browser and navigate to `http://127.0.0.1:8080/keygen` in order to generate an access key. Now you can use the secret `key` generated to create channel keys, which allow you to secure individual channels and start using emitter.
 
 ![image](https://user-images.githubusercontent.com/1423657/62931666-044bf200-bdbf-11e9-90b0-43705eb81186.png)
 
