@@ -1,6 +1,6 @@
 # HEP Through Emitter
 
-This examples illustrates a simple HEP pipeline through an [emitter](https://github.com/emitter-io/) instance
+This dummy example illustrates a simple HEP pipeline through an [emitter](https://github.com/emitter-io/) instance
 
 ### Requirements
 - Emitter Server
@@ -8,6 +8,48 @@ This examples illustrates a simple HEP pipeline through an [emitter](https://git
   - Generate a Key
 - HEPmitter
   - Channel and Key in `config.js`
+  
+### Quick Start
+#### Emitter
+The quick way to start an Emitter broker is by using docker run command as shown below.
+```
+docker run -d --name emitter -p 8080:8080 --restart=unless-stopped emitter/server
+```
+Both commands above start a new server and if no configuration or environment variables were supplied, it will print out a message similar to the message below once the server has started:
+```
+[service] unable to find a license, make sure 'license' value is set in the config file or EMITTER_LICENSE environment variable
+[service] generated new license: uppD0PFIcNK6VY-7PTo7uWH8EobaOGgRAAAAAAAAAAI
+[service] generated new secret key: JUoOxjoXLc4muSxXynOpTc60nWtwUI3o
+```
+This message shows that a new security configuration was generated, you can then re-run `EMITTER_LICENSE` set to the specified value. Alternatively, you can set `license` property in the `emitter.conf` configuration file.
+
+Finally, open a browser and navigate to `http://127.0.0.1:8080/keygen` in order to generate your key. Now you can use the secret `key` generated to create channel keys, which allow you to secure individual channels and start using emitter.
+
+#### HEPmitter
+Clone this git repository and install using `npm`
+```
+git clone https://github.com/lmangani/HEPmitter
+cd HEPmitter
+npm install
+```
+
+Next, configure your channel and secret `key` using file `config.js`
+```
+config = {
+	server: {
+		host: '127.0.0.1',
+		port: 8080
+	},
+	sub: {
+		key: "QTD29b_rvDuvHBft794KUu9Z809gwPPU",
+		name: "hep"
+	}
+}
+```
+
+Last, start `HEPmitter` and verify you receive back a fully decoded `HEP` message.
+```
+
 
 
 
