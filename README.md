@@ -49,7 +49,22 @@ config = {
 
 Last, start `HEPmitter` and verify you receive back a fully decoded `HEP` message.
 ```
-
+connected!
+output hep { rcinfo: 
+   { protocolFamily: 2,
+     protocol: 17,
+     srcIp: '10.0.0.1',
+     dstIp: '10.0.0.2',
+     srcPort: 5060,
+     dstPort: 5060,
+     timeSeconds: 2319774396,
+     timeUseconds: 0,
+     payloadType: 100,
+     captureId: 2001,
+     hepNodeName: '2001',
+     capturePass: 'myHep' },
+  payload: 'hello HEP!' }
+  ```
 
 
 
