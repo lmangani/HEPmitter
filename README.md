@@ -1,4 +1,6 @@
-# HEP Through Emitter
+# <img src="http://i.imgur.com/RSUlFRa.gif" width="150" alt="HEP">
+
+# HEP MQTT Emitter
 
 This dummy example illustrates a simple HEP pipeline through an [emitter](https://github.com/emitter-io/) instance using MQTT
 
