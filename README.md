@@ -1,6 +1,6 @@
 # HEP Through Emitter
 
-This dummy example illustrates a simple HEP pipeline through an [emitter](https://github.com/emitter-io/) instance
+This dummy example illustrates a simple HEP pipeline through an [emitter](https://github.com/emitter-io/) instance using MQTT
 
 ### Requirements
 - Emitter Server
