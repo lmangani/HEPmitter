@@ -71,6 +71,15 @@ output hep { rcinfo:
      capturePass: 'myHep' },
   payload: 'hello HEP!' }
   ```
+  
+### Testing
+To test your Emitter instance using regular MQTT clients, refer to the following:
+```
+  mosquitto_sub -v -d -t "QTD29b_rvDuvHBft794KUu9Z809gwPPU/hep/" -p 8787
+  mosquitto_pub -d -t 'QTD29b_rvDuvHBft794KUu9Z809gwPPU/hep/' -m 'helloWorld' -p 8787
+```
+
+  
 
 
 
